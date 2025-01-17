@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Nexar Institute</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Nexar Logo">
+            </div>
+            <h1>NEXAR INSTITUTE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#admissions">Admissions</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+    
+
+    <!-- Admission Form Section -->
+    <section id="admission-form" class="admission-form">
+        <div class="container">
+            <h2 class="section-title">Admission Form</h2>
+            <p>Please fill out the form below to apply for admission to Nexar Institute.</p>
+            <form action="#" method="POST" class="form">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Select Program:</label>
+                    <select id="program" name="program" required>
+                        <option value="" disabled selected>Select a program</option>
+                        <option value="Nursing">Nursing</option>
+                        <option value="Clinical Medicine">Clinical Medicine</option>
+                        <option value="Environmental Health">Environmental Health</option>
+                        <option value="Public Health">Public Health</option>
+                        <option value="Business Administration">Business Administration</option>
+                        <option value="Nutrition">Nutrition</option>
+                        <option value="Occupational Health and Safety">Occupational Health and Safety</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="documents">Upload Documents:</label>
+                    <input type="file" id="documents" name="documents" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter any additional information"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Nexar Institute of Health Sciences and Business Studies. All Rights Reserved.</p>
+    </footer>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">Top</button>
+
+</body>
+</html>

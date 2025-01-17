@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #E5E5E5;
+    color: #2F4F4F;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #800000;
+    color: #E5E5E5;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out logo+text and nav */
+    padding: 10px 20px;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    gap: 15px; /* Space between logo and text */
+}
+
+header .logo img {
+    height: 80px; /* Make logo larger */
+}
+
+header .logo h1 {
+    font-size: 32px; /* Keep text size consistent */
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center; /* Align nav links vertically with the logo */
+    margin-left: auto; /* Push navigation to the far right */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #E5E5E5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00cc99;
+}
+
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #004225;
+    color: #E5E5E5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #006644;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.about, .programs, .admissions, .contact {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admissions {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.admissions img {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 400px; /* Sets a fixed height to keep the image visible */
+    object-fit: cover; /* Ensures the image scales properly within the dimensions */
+    border-radius: 10px; /* Keeps rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the subtle shadow */
+    margin: 20px 0; /* Adds vertical spacing, removes centering */
+    display: block; /* Ensures the image is treated as a block element */
+}
+
+.section-title {
+    font-size: 28px;
+    color: #004225;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 10px;
+    border-left: 5px solid #800000;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #800000;
+    color: #E5E5E5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #660000;
+}
+
+/* Image Placeholders */
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #6E6E6E;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #004225;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+.about-image {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 400px; /* Sets a fixed height to keep the image visible */
+    object-fit: cover; /* Ensures the image scales properly within the dimensions */
+    border-radius: 10px; /* Keeps rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the subtle shadow */
+    margin: 20px 0; /* Adds vertical spacing, removes centering */
+    display: block; /* Ensures the image is treated as a block element */
+}
+.prog-image {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 400px; /* Sets a fixed height to keep the image visible */
+    object-fit: cover; /* Ensures the image scales properly within the dimensions */
+    border-radius: 10px; /* Keeps rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the subtle shadow */
+    margin: 20px 0; /* Adds vertical spacing, removes centering */
+    display: block; /* Ensures the image is treated as a block element */
+}
+.con-image {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 400px; /* Sets a fixed height to keep the image visible */
+    object-fit: cover; /* Ensures the image scales properly within the dimensions */
+    border-radius: 10px; /* Keeps rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the subtle shadow */
+    margin: 20px 0; /* Adds vertical spacing, removes centering */
+    display: block; /* Ensures the image is treated as a block element */
+}
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #660000;
+    transform: scale(1.1);
+} 
